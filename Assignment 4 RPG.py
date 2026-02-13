@@ -52,6 +52,7 @@ else:
         stats["Stress"] += stress_level
 
         print(f"\nWell...I guess that settles everything. Here are your base stats:\n{stats}")
+        #Upgrade
         upgrade_sets = study_hours // 12
         if study_hours >= 12:
           print("Oh well it looks like you can upgrade your stats already!")
@@ -72,6 +73,7 @@ else:
           print("\nUpgrades complete!")
           print("Final stats:")
           print(stats)
+          #Upgrade twice
         if study_hours >= 12:
           print("\nOh dang! I guess you have another upgrade. Look at you having a headstart!")
           print(f"You have {upgrade_sets} upgrade set(s).")
@@ -108,6 +110,7 @@ else:
         print(" * *      * *    *        *        *   *        *  ")
         print(" *          *    *****    *****    *    *     *****")
         print("---------------------------------------------------")
+        #choice 1
         print("\nIt's monday and you have five classes with a lot of them being back-to-back.\nSounds like a terrible way to start your first day.")
         print("Maybe it might be better to skip one or two classes...you're not doing anything in there anyways. But that might leave a bad imprint...\n")
         print("--------------------------------------------------------------------------------------------")
@@ -137,6 +140,7 @@ else:
           stats["Stress"] -= 10
           stats["Social"] += 0
         print(stats)
+        #Upgrade
         upgrade_sets = study_hours // 12
         if study_hours >= 12:
           print("Oh well it looks like you can upgrade your stats already!")
@@ -158,6 +162,7 @@ else:
           print("Final stats:")
           print(stats)
         print("\nWell the first day is always the lightest. No worries\n")
+        #choice 2
         print("Its Wednesday night and you're hearing about a function thats supposed to be happening. Sounds fun. There's no assignments at the moment.")
         print("--------------------------------------------------------------------------------------------")
         print("1: Just go get some rest | +0 Study Points | -20 Stress | +0 Social |")
@@ -186,6 +191,7 @@ else:
           stats["Stress"] -= 10
           stats["Social"] += 0
         print(stats)
+        #Upgrade
         upgrade_sets = study_hours // 12
         if study_hours >= 12:
           print("Oh well it looks like you can upgrade your stats already!")
@@ -207,6 +213,7 @@ else:
           print("Final stats:")
           print(stats)
         print("\nThere will always be more functions in store for you.\n")
+        #choice 3
         print("Its Friday. Do you go to your 9AM Computer Science class?")
         print("--------------------------------------------------------------------------------------------")
         print("1: Nah")
@@ -225,6 +232,7 @@ else:
             stats["Study Points"] += 8
             stats["Stress"] -= 15
           else:
+            #choice of luck
             print("Pick a number between 1 and 5")
             pass_or_fail = int(input())
             failure1 = random.randint(1,5)
@@ -241,6 +249,7 @@ else:
           print("Ight you must be doing this on purpose at this point. So imma just say that you still couldn't get outta bed. Tough world")
           stats["Study Points"] -= 10
           stats["Stress"] -= 25
+          #Upgrade
         upgrade_sets = study_hours // 12
         if study_hours >= 12:
           print("Oh well it looks like you can upgrade your stats already!")
@@ -274,6 +283,7 @@ else:
             print("You're ragebaiting me...I know it.")
             stats["Study Points"] -= 10
         print("Week 1 Complete! CONGRATULATIONS")
+        #Second Week
         print("-------------------------------------------------------")
         print(" *          *    *****    *****    *    *     *****    ")
         print(" *    **    *    *        *        *   *     *     *   ")
@@ -281,4 +291,74 @@ else:
         print(" * *      * *    *        *        *   *        *      ")
         print(" *          *    *****    *****    *    *     ******   ")
         print("-------------------------------------------------------")
-        
+        #Third Week
+
+        print("-------------------------------------------------------")
+        print(" *          *    *****    *****    *    *     *****    ")
+        print(" *    **    *    *        *        *   *          *    ")
+        print(" *  *   *   *    *****    *****    * *        *****    ")
+        print(" * *      * *    *        *        *   *          *    ")
+        print(" *          *    *****    *****    *    *     *****    ")
+        print("-------------------------------------------------------")
+        #Fourth Week
+
+        print("-------------------------------------------------------")
+        print(" *          *    *****    *****    *    *     *   *    ")
+        print(" *    **    *    *        *        *   *      *   *    ")
+        print(" *  *   *   *    *****    *****    * *        *****    ")
+        print(" * *      * *    *        *        *   *          *    ")
+        print(" *          *    *****    *****    *    *         *    ")
+        print("-------------------------------------------------------")
+        #Midterms
+
+        print("----------------------------------------------------------------------")
+        print(" *         *   *****  ****   *****  *****   ****   *        *   ***** ")
+        print(" * *     * *     *    *   *    *    *       *   *  * *    * *  *      ")
+        print(" *  *   *  *     *    *   *    *    *****   ****   *  *  *  *   ****  ")
+        print(" *    **   *     *    *   *    *    *       * *    *   **   *       * ")
+        print(" *         *   *****  ****     *    *****   *   *  *        *   ****  ")
+        print("----------------------------------------------------------------------")
+
+        print("-------------------------------------------------------")
+        print(" *          *    *****    *****    *    *     *****    ")
+        print(" *    **    *    *        *        *   *      *        ")
+        print(" *  *   *   *    *****    *****    * *        *****    ")
+        print(" * *      * *    *        *        *   *          *    ")
+        print(" *          *    *****    *****    *    *     *****    ")
+        print("-------------------------------------------------------")
+        #Sixth Week
+
+        print("-------------------------------------------------------")
+        print(" *          *    *****    *****    *    *     *****    ")
+        print(" *    **    *    *        *        *   *      *        ")
+        print(" *  *   *   *    *****    *****    * *        *****    ")
+        print(" * *      * *    *        *        *   *      *   *    ")
+        print(" *          *    *****    *****    *    *     *****    ")
+        print("-------------------------------------------------------")
+        #Seventh Week
+
+        print("-------------------------------------------------------")
+        print(" *          *    *****    *****    *    *    *******   ")
+        print(" *    **    *    *        *        *   *          *    ")
+        print(" *  *   *   *    *****    *****    * *           *     ")
+        print(" * *      * *    *        *        *   *        *      ")
+        print(" *          *    *****    *****    *    *      *       ")
+        print("-------------------------------------------------------")
+        #Eighth Week 
+
+        print("-------------------------------------------------------")
+        print(" *          *    *****    *****    *    *     *****    ")
+        print(" *    **    *    *        *        *   *      *   *    ")
+        print(" *  *   *   *    *****    *****    * *        *****    ")
+        print(" * *      * *    *        *        *   *      *   *    ")
+        print(" *          *    *****    *****    *    *     *****    ")
+        print("-------------------------------------------------------")
+        #Finals Week
+
+        print("---------------------------------------------------------------")
+        print(" **********  **********  *       *   *****   *         *****   ")
+        print(" **              **      * *     *  *     *  *        *        ")
+        print(" ******          **      *   *   *  *******  *         *****   ")
+        print(" **              **      *     * *  *     *  *              *  ")
+        print(" **          **********  *       *  *     *  *******   *****   ")
+        print("---------------------------------------------------------------")
